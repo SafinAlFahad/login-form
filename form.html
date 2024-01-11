@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <style>
+        .login-form-container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            border: 10px solid black;
+            background-color: bisque;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 5px solid blueviolet;
+            background-color: aquamarine;
+            width: 70%;
+        }
+        .login-form input{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #btn{
+            color: azure;
+            background-color: royalblue;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="login-form-container">
         <form action="" class="login-form">
-            <h3>Login Form:</h3>
-            Email:
+            <h2>Login Form:</h2>
+            <b>Email:</b>
             <input type="email" placeholder="Enter your email" required>
-            password:
+            <b>password:</b>
             <input type="password" placeholder="Enter your password" required>
-            <input type="submit" value="login">
+            <input id="btn" type="submit" value="login">
         </form>
     </div>
     
